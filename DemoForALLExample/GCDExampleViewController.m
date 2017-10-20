@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self DispatchGroup];
+    [self DispatchBarrierAsync];
     // Do any additional setup after loading the view.
 }
 
@@ -62,5 +63,40 @@
     }
 }
 
-
+/**
+ <一>什么是dispatch_barrier_async函数
+ 
+ 毫无疑问,dispatch_barrier_async函数的作用与barrier的意思相同,在进程管理中起到一个栅栏的作用,它等待所有位于barrier函数之前的操作执行完毕后执行,并且在barrier函数执行之后,barrier函数之后的操作才会得到执行,该函数需要同dispatch_queue_create函数生成的concurrent Dispatch Queue队列一起使用
+ 
+ <二>dispatch_barrier_async函数的作用
+ 
+ 1.实现高效率的数据库访问和文件访问
+ 
+ 2.避免数据竞争
+ 
+ <三>dispatch_barrier_async实例
+ */
+- (void)DispatchBarrierAsync{
+　　//同dispatch_queue_create函数生成的concurrent Dispatch Queue队列一起使用
+    dispatch_queue_t queue = dispatch_queue_create("12312312", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_async(queue, ^{
+        NSLog(@"----1-----%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"----2-----%@", [NSThread currentThread]);
+    });
+    
+    dispatch_barrier_async(queue, ^{
+        NSLog(@"----barrier-----%@", [NSThread currentThread]);
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"----3-----%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"----4-----%@", [NSThread currentThread]);
+    });
+    //输出结果:1 2 --> barrier -->3 4  其中12 与 34 由于并行处理先后顺序不定
+}
 @end
