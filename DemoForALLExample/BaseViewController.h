@@ -12,7 +12,7 @@
 /** BackgroundColor */
 @property (nonatomic, strong) UIColor *viewBackgroundColor;
 
-/** 频道type */
-@property (nonatomic, copy) NSString *type;
+/** title */
+@property (nonatomic, copy) NSString *titleName;
 
 @end

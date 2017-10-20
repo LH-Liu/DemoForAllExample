@@ -6,6 +6,8 @@
 //  Copyright © 2017年 com.zhangyuan. All rights reserved.
 //
 #import "BaseViewController.h"
-@interface CategaryExampleViewController : BaseViewController
+@interface CategoryExampleViewController : BaseViewController
 @property (nonatomic, strong) UIColor *viewBackgroundColor;
+/** title */
+@property (nonatomic, copy) NSString *titleName;
 @end

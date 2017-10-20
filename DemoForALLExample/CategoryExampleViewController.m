@@ -6,13 +6,13 @@
 //  Copyright © 2017年 com.zhangyuan. All rights reserved.
 //
 
-#import "CategaryExampleViewController.h"
+#import "CategoryExampleViewController.h"
 
-@interface CategaryExampleViewController ()
+@interface CategoryExampleViewController ()
 
 @end
 
-@implementation CategaryExampleViewController
+@implementation CategoryExampleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -146,7 +146,7 @@
     if (!_sourceArray) {
         _sourceArray = @[@"GCDExampleViewController",
                          @"BlockExampleViewController",
-                         @"CategaryExampleViewController"
+                         @"CategoryExampleViewController"
                          ];
     }
     return _sourceArray;
@@ -155,9 +155,9 @@
 - (NSArray *)propertyArray{
     if (!_propertyArray) {
         _propertyArray = @[
-                           @{@"property":@{@"viewBackgroundColor":[UIColor whiteColor],}},
-                           @{@"property":@{@"viewBackgroundColor":[UIColor redColor],}},
-                           @{@"property":@{@"viewBackgroundColor":[UIColor cyanColor],}}
+                           @{@"property":@{@"viewBackgroundColor":[UIColor whiteColor],@"titleName":@"GCD"}},
+                           @{@"property":@{@"viewBackgroundColor":[UIColor redColor],@"titleName":@"Block"}},
+                           @{@"property":@{@"viewBackgroundColor":[UIColor cyanColor],@"titleName":@"Category"}}
   ];
     }
     return _propertyArray;

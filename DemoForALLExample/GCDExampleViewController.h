@@ -8,5 +8,7 @@
 
 #import "BaseViewController.h"
 @interface GCDExampleViewController : BaseViewController
-@property (nonatomic, strong) UIColor *viewBackgroundColor; 
+@property (nonatomic, strong) UIColor *viewBackgroundColor;
+/** title */
+@property (nonatomic, copy) NSString *titleName;
 @end

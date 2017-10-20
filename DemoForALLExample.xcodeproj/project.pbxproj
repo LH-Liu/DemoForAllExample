@@ -15,7 +15,7 @@
 		6EA860861F99C08C00DB6D8A /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA860851F99C08C00DB6D8A /* RootTableViewController.m */; };
 		6EA860891F99C61600DB6D8A /* GCDExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA860881F99C61600DB6D8A /* GCDExampleViewController.m */; };
 		6EA8608C1F99C88100DB6D8A /* BlockExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8608B1F99C88100DB6D8A /* BlockExampleViewController.m */; };
-		6EA8608F1F99C89500DB6D8A /* CategaryExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8608E1F99C89500DB6D8A /* CategaryExampleViewController.m */; };
+		6EA8608F1F99C89500DB6D8A /* CategoryExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8608E1F99C89500DB6D8A /* CategoryExampleViewController.m */; };
 		6EA860921F99C93D00DB6D8A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA860911F99C93D00DB6D8A /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,8 @@
 		6EA860881F99C61600DB6D8A /* GCDExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDExampleViewController.m; sourceTree = "<group>"; };
 		6EA8608A1F99C88100DB6D8A /* BlockExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockExampleViewController.h; sourceTree = "<group>"; };
 		6EA8608B1F99C88100DB6D8A /* BlockExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockExampleViewController.m; sourceTree = "<group>"; };
-		6EA8608D1F99C89500DB6D8A /* CategaryExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategaryExampleViewController.h; sourceTree = "<group>"; };
-		6EA8608E1F99C89500DB6D8A /* CategaryExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategaryExampleViewController.m; sourceTree = "<group>"; };
+		6EA8608D1F99C89500DB6D8A /* CategoryExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryExampleViewController.h; sourceTree = "<group>"; };
+		6EA8608E1F99C89500DB6D8A /* CategoryExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryExampleViewController.m; sourceTree = "<group>"; };
 		6EA860901F99C93D00DB6D8A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		6EA860911F99C93D00DB6D8A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +80,8 @@
 				6EA860881F99C61600DB6D8A /* GCDExampleViewController.m */,
 				6EA8608A1F99C88100DB6D8A /* BlockExampleViewController.h */,
 				6EA8608B1F99C88100DB6D8A /* BlockExampleViewController.m */,
-				6EA8608D1F99C89500DB6D8A /* CategaryExampleViewController.h */,
-				6EA8608E1F99C89500DB6D8A /* CategaryExampleViewController.m */,
+				6EA8608D1F99C89500DB6D8A /* CategoryExampleViewController.h */,
+				6EA8608E1F99C89500DB6D8A /* CategoryExampleViewController.m */,
 				6EA860761F99C06000DB6D8A /* Main.storyboard */,
 				6EA860791F99C06000DB6D8A /* Assets.xcassets */,
 				6EA8607B1F99C06000DB6D8A /* LaunchScreen.storyboard */,
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EA860721F99C06000DB6D8A /* AppDelegate.m in Sources */,
-				6EA8608F1F99C89500DB6D8A /* CategaryExampleViewController.m in Sources */,
+				6EA8608F1F99C89500DB6D8A /* CategoryExampleViewController.m in Sources */,
 				6EA8606F1F99C06000DB6D8A /* main.m in Sources */,
 				6EA8608C1F99C88100DB6D8A /* BlockExampleViewController.m in Sources */,
 				6EA860891F99C61600DB6D8A /* GCDExampleViewController.m in Sources */,
@@ -335,6 +335,7 @@
 				6EA860831F99C06000DB6D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

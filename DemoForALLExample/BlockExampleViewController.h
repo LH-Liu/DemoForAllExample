@@ -9,4 +9,6 @@
 #import "BaseViewController.h"
 @interface BlockExampleViewController : BaseViewController
 @property (nonatomic, strong) UIColor *viewBackgroundColor;
+/** title */
+@property (nonatomic, copy) NSString *titleName;
 @end
